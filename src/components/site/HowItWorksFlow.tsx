@@ -117,15 +117,7 @@ export function HowItWorks() {
                   <span className="text-[0.625rem] uppercase tracking-[0.18em] text-muted-foreground lg:hidden">
                     {s.stage}
                   </span>
-                  <h3 className="mt-1 text-lg leading-snug lg:mt-0">
-                    {s.title}
-                    {s.titleLine2 && (
-                      <>
-                        <br />
-                        {s.titleLine2}
-                      </>
-                    )}
-                  </h3>
+                  <h3 className="mt-1 text-lg leading-snug lg:mt-0">{s.title}</h3>
                   <p className="mt-2 text-sm text-muted-foreground">{s.copy}</p>
                 </div>
               </div>
