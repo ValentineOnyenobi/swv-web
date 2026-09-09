@@ -55,7 +55,7 @@ export const navLinks = [
 ];
 
 export const footerSecondaryLinks = [
-  { label: "Terms of Service", to: "/terms" },
+  { label: "Terms Of Service", to: "/terms" },
   { label: "Privacy Policy", to: "/privacy" },
 ];
 
@@ -63,18 +63,18 @@ export const footerSecondaryLinks = [
 export const servicePaths = [
   {
     id: "automation",
-    title: "Automate my property",
+    title: "Automate My Property",
     copy: "Digital operations, guest requests, task routing & reporting.",
-    cta: "Explore automation",
+    cta: "Explore Automation",
     to: "/automation",
     image: platformQr,
     alt: "Guest scanning a property QR code with a phone",
   },
   {
     id: "property-care",
-    title: "Take care of my property",
+    title: "Take Care Of My Property",
     copy: "Housekeeping, cleaning, linen & property care.",
-    cta: "Explore property care",
+    cta: "Explore Property Care",
     to: "/property-care",
     image: housekeepingTeam,
     alt: "Housekeeping team preparing a suite",
@@ -83,7 +83,7 @@ export const servicePaths = [
     id: "both",
     title: "Both",
     copy: "Technology + operational team working together.",
-    cta: "See how it works",
+    cta: "See How It Works",
     to: "#how-it-works",
     image: statement,
     alt: "Serviced apartment living room in warm daylight",
@@ -94,7 +94,7 @@ export const howItWorks = [
   {
     step: "01",
     stage: "Capture",
-    title: "Request captured",
+    title: "Request Captured",
     copy: "A guest or staff member submits an issue or service request.",
     image: flowGuest,
     alt: "Guest scanning a QR code card with a phone in a serviced apartment",
@@ -102,7 +102,7 @@ export const howItWorks = [
   {
     step: "02",
     stage: "Route",
-    title: "Task created & routed",
+    title: "Task Created & Routed",
     copy: "The request is logged and directed to the appropriate person or team.",
     image: flowRoute,
     alt: "Operations screen routing a request to the right team",
@@ -110,7 +110,7 @@ export const howItWorks = [
   {
     step: "03",
     stage: "Deliver",
-    title: "Work completed",
+    title: "Work Completed",
     copy: "Your own team or Elite Handlers carries out the work.",
     image: housekeepingTeam,
     alt: "Housekeeping team servicing a room",
@@ -118,7 +118,7 @@ export const howItWorks = [
   {
     step: "04",
     stage: "Visibility",
-    title: "Manager visibility",
+    title: "Manager Visibility",
     copy: "See what is open, in progress and completed, with information available for reporting.",
     image: flowVisibility,
     alt: "Laptop dashboard listing property requests and their statuses",
@@ -166,62 +166,62 @@ export const handlerServices = [
 
 /* -------------------------------- Automation ----------------------------- */
 export const automationCapabilities = [
-  "Guest request capture",
-  "QR codes",
-  "Digital forms",
-  "Task creation",
-  "Automated routing",
-  "Property-specific workflows",
-  "Staff & team assignment",
-  "Status tracking",
-  "Operational dashboards",
+  "Guest Request Capture",
+  "QR Codes",
+  "Digital Forms",
+  "Task Creation",
+  "Automated Routing",
+  "Property-Specific Workflows",
+  "Staff & Team Assignment",
+  "Status Tracking",
+  "Operational Dashboards",
   "Reporting",
-  "Recurring issue visibility",
+  "Recurring Issue Visibility",
 ];
 
 export const automationOutcomes = [
   {
-    title: "Fewer repeat questions",
+    title: "Fewer Repeat Questions",
     copy: "Guests and staff get a clear way to request information or services without repeatedly calling or messaging the team.",
   },
   {
-    title: "One scan replaces five phone calls",
+    title: "One Scan Replaces Five Phone Calls",
     copy: "QR-based request capture gives guests a direct route to the right service.",
   },
   {
-    title: "Nothing falls through the cracks between shifts",
+    title: "Nothing Falls Through The Cracks Between Shifts",
     copy: "Requests stay logged and visible instead of depending on someone remembering to pass them on.",
   },
   {
-    title: "Stockouts caught before the guest notices",
+    title: "Stockouts Caught Before The Guest Notices",
     copy: "Operational requests and recurring issues can be tracked before they become guest-facing problems.",
   },
   {
-    title: "Proof of condition, every visit",
+    title: "Proof Of Condition, Every Visit",
     copy: "Structured reporting and records create visibility around inspections and property condition.",
   },
   {
-    title: "Clear ownership",
+    title: "Clear Ownership",
     copy: "No more \u201cI thought someone else had it.\u201d Tasks carry clear ownership and status.",
   },
 ];
 
 export const exampleWorkflow = [
-  "Guest reports an issue",
-  "Request logged",
-  "Task assigned",
-  "Team responds",
-  "Task completed",
-  "Manager sees the result",
+  "Guest Reports An Issue",
+  "Request Logged",
+  "Task Assigned",
+  "Team Responds",
+  "Task Completed",
+  "Manager Sees The Result",
 ];
 
 export const bothFlow = [
-  "Request captured",
-  "StayWithVantage platform",
-  "Task routed",
-  "Elite Handlers or your own team",
-  "Work completed",
-  "Manager visibility & reporting",
+  "Request Captured",
+  "StayWithVantage Platform",
+  "Task Routed",
+  "Elite Handlers Or Your Own Team",
+  "Work Completed",
+  "Manager Visibility & Reporting",
 ];
 
 /* ---------------------------------- About -------------------------------- */
@@ -248,27 +248,27 @@ export const whoWeServe = [
 
 export const whyPoints = [
   {
-    title: "Clear model",
+    title: "Clear Model",
     copy: "Automation, property care, or both - choose the setup that fits your operation.",
   },
   {
-    title: "Built for scale",
+    title: "Built For Scale",
     copy: "Use the same operating framework as you add properties, units and teams.",
   },
   {
-    title: "Fewer missed requests",
+    title: "Fewer Missed Requests",
     copy: "Requests are captured, tracked and visible instead of getting lost across messages and conversations.",
   },
   {
-    title: "Faster resolutions",
+    title: "Faster Resolutions",
     copy: "Tasks can be routed directly to the appropriate person or team.",
   },
   {
-    title: "Data-driven management",
+    title: "Data-Driven Management",
     copy: "Gain visibility into response times, bottlenecks, recurring issues and operational performance.",
   },
   {
-    title: "Flexible execution",
+    title: "Flexible Execution",
     copy: "Use your own team, Elite Handlers, or a combination of both.",
   },
 ];
@@ -281,9 +281,9 @@ export const reassurances = [
 ];
 
 export const trustPoints = [
-  { title: "Vetted & trained staff", copy: "Screened, inducted and supervised." },
-  { title: "Consistent reporting", copy: "The same standard of record, every visit." },
-  { title: "Insurance & bonding", copy: "Placeholder - cover details to be added." },
+  { title: "Vetted & Trained Staff", copy: "Screened, inducted and supervised." },
+  { title: "Consistent Reporting", copy: "The same standard of record, every visit." },
+  { title: "Insurance & Bonding", copy: "Placeholder - cover details to be added." },
 ];
 
 export const testimonials = [
