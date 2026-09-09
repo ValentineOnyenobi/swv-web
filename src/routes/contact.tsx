@@ -12,7 +12,7 @@ type ContactSearch = { interest?: string };
 
 export const Route = createFileRoute("/contact")({
   validateSearch: (search: Record<string, unknown>): ContactSearch => {
-    const raw = typeof search.interest === "string" ? search.interest : undefined;
+    const raw = typeof search["interest"] === "string" ? (search["interest"] as string) : undefined;
     const match = interestOptions.find((o) => o.toLowerCase() === raw?.toLowerCase());
     return match ? { interest: match } : {};
   },
