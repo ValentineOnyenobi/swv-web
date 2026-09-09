@@ -28,7 +28,7 @@ export function Nav() {
       )}
     >
       <div className="mx-auto grid max-w-6xl grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-5 py-4 sm:px-8">
-        <Link to="/" onClick={close} aria-label="StayWithVantage — home" className="min-w-0">
+        <Link to="/" onClick={close} aria-label="StayWithVantage - home" className="min-w-0">
           <span
             className={cn(
               "inline-flex items-center justify-center rounded-full bg-white p-1.5 shadow-sm transition-shadow sm:p-2",

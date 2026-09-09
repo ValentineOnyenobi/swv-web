@@ -47,7 +47,7 @@ export function HubSpotForm({ defaultInterest }: { defaultInterest?: string | un
   if (state === "sent") {
     return (
       <div className="rounded-xl border border-primary/20 bg-secondary/60 p-6">
-        <p className="text-base">Thank you — your enquiry is with us.</p>
+        <p className="text-base">Thank you - your enquiry is with us.</p>
         <p className="mt-2 text-sm text-muted-foreground">
           We'll come back to you shortly, usually the same day.
         </p>
