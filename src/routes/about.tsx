@@ -4,9 +4,9 @@ import { Eyebrow, LinkButton, Section } from "@/components/site/ui";
 import { modelStatement, whoWeServe, whyPoints } from "@/content/site";
 import heroSuite from "@/assets/hero-suite.jpg";
 
-const title = "About StayWithVantage - Property operations, simplified";
+const title = "About StayWithVantage - Property operations, simplified.";
 const description =
-  "StayWithVantage combines property automation with Elite Handlers property care for hotels, short-lets, serviced apartments and property managers.";
+  "StayWithVantage helps hotels, short-lets and serviced apartments run better through property automation and professional property care. Technology coordinates the operation. People deliver the work.";
 
 export const Route = createFileRoute("/about")({
   head: () => ({

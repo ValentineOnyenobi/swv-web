@@ -166,9 +166,6 @@ export function Trust() {
       </div>
 
       <div className="mt-16 border-t border-primary/15 pt-8">
-        <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground">
-          Sample content - illustrative placeholders, not verified customer reviews
-        </p>
         <div className="mt-6 grid gap-6 md:grid-cols-3">
           {testimonials.map((t) => (
             <figure key={t.name + t.org} className="relative bg-card p-7">
