@@ -24,8 +24,10 @@ export const submitContactEnquiry = createServerFn({ method: "POST" })
       { name: "lastname", value: data.lastname },
       { name: "email", value: data.email },
       { name: "phone", value: data.phone },
-      { name: "message", value: data.message },
-      { name: "interested_in", value: data.interest },
+      {
+        name: "message",
+        value: data.interest ? `Interested in: ${data.interest}\n\n${data.message}` : data.message,
+      },
     ].filter((f) => f.value !== "");
 
     const res = await fetch(ENDPOINT, {

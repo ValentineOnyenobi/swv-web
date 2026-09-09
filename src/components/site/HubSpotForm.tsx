@@ -8,7 +8,7 @@ const fieldClass =
 
 const labelClass = "block text-[0.7rem] tracking-[0.14em] uppercase text-muted-foreground";
 
-export function HubSpotForm() {
+export function HubSpotForm({ defaultInterest }: { defaultInterest?: string }) {
   const submit = useServerFn(submitContactEnquiry);
   const [state, setState] = useState<"idle" | "sending" | "sent">("idle");
   const [error, setError] = useState<string | null>(null);
