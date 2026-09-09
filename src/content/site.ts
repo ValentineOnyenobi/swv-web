@@ -264,7 +264,7 @@ export const whyPoints = [
     copy: "Tasks can be routed directly to the appropriate person or team.",
   },
   {
-    title: "Data-driven Management",
+    title: "Data-Driven Management",
     copy: "Gain visibility into response times, bottlenecks, recurring issues and operational performance.",
   },
   {
