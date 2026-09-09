@@ -124,11 +124,11 @@ export function HowItWorks() {
         {/* Information panel */}
         <div className="mt-16 rounded-lg border border-primary/15 bg-background/70 px-6 py-8 sm:px-10 sm:py-10">
           <h3 className="max-w-xl text-xl sm:text-2xl">
-            StayWithVantage coordinates information.
+            Technology coordinates the operation. People deliver the work.
           </h3>
           <p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted-foreground">
-            The work itself is performed either by your own team or by the{" "}
-            <span className="text-foreground">Elite Handlers</span> Property Care team.
+            The work itself is carried out either by your own team or by the{" "}
+            <span className="text-foreground">Elite Handlers</span> property care team.
           </p>
         </div>
       </div>
