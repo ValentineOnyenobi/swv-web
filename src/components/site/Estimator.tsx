@@ -235,8 +235,8 @@ export function Estimator() {
             <p className="mt-8 text-xs leading-relaxed text-white/45">
               Indicative estimate only - all figures are monthly service subscription estimates,
               not one-off service prices. Final pricing is confirmed after a quick property
-              assessment. Larger properties, industrial cleaning and project work are
-              layer are quoted separately.
+              assessment. Larger properties, industrial cleaning and project-based work are quoted
+              separately.
             </p>
           </div>
 
