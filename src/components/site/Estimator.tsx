@@ -106,8 +106,8 @@ export function Estimator() {
       <Eyebrow>How pricing works</Eyebrow>
       <h2 className="mt-4 max-w-2xl text-3xl sm:text-4xl">Estimate your service.</h2>
       <p className="mt-4 max-w-xl text-muted-foreground">
-        Pricing is built from two simple parts — property care and linen — combined at a discount
-        when you take both. This is an indicative self-qualification tool, not a binding quote.
+        Pricing is built from two parts - housekeeping and linen - combined at a discount when you
+        take both. This is an indicative estimate, not a binding quote.
       </p>
       <p className="mt-3 inline-flex items-center gap-2 rounded-full border border-primary/15 bg-primary/5 px-4 py-1.5 text-xs uppercase tracking-[0.14em] text-primary/80">
         Elite Handlers · Monthly service subscription
@@ -225,7 +225,7 @@ export function Estimator() {
                 )}
                 {comboApplies && (
                   <div className="flex justify-between gap-4 border-t border-white/15 pt-2 text-accent">
-                    <dt>Elite Property Care combo rate applied</dt>
+                    <dt>Combined rate applied</dt>
                     <dd>−{naira(discount)}</dd>
                   </div>
                 )}
