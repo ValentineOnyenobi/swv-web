@@ -109,10 +109,6 @@ export function WhatDoYouNeed() {
   );
 }
 
-/* ------------------ Property Care services (Elite Handlers) ------------- */
-export function HandlersDetail() {
-  return null;
-}
 
 /* ------------------------ You run the property -------------------------- */
 export function Statement() {
