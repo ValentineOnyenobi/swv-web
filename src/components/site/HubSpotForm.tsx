@@ -8,7 +8,7 @@ const fieldClass =
 
 const labelClass = "block text-[0.7rem] tracking-[0.14em] uppercase text-muted-foreground";
 
-export function HubSpotForm({ defaultInterest }: { defaultInterest?: string }) {
+export function HubSpotForm({ defaultInterest }: { defaultInterest?: string | undefined }) {
   const submit = useServerFn(submitContactEnquiry);
   const [state, setState] = useState<"idle" | "sending" | "sent">("idle");
   const [error, setError] = useState<string | null>(null);
@@ -27,6 +27,7 @@ export function HubSpotForm({ defaultInterest }: { defaultInterest?: string }) {
           email: String(fd.get("email") ?? ""),
           phone: String(fd.get("phone") ?? ""),
           message: String(fd.get("message") ?? ""),
+          interest: String(fd.get("interest") ?? ""),
           pageUri: typeof window !== "undefined" ? window.location.href : "",
         },
       });
@@ -83,6 +84,25 @@ export function HubSpotForm({ defaultInterest }: { defaultInterest?: string }) {
           Phone number
         </label>
         <input id="phone" name="phone" type="tel" autoComplete="tel" className={fieldClass} />
+      </div>
+
+      <div>
+        <label className={labelClass} htmlFor="interest">
+          Interested in
+        </label>
+        <select
+          id="interest"
+          name="interest"
+          defaultValue={defaultInterest ?? ""}
+          className={fieldClass}
+        >
+          <option value="">Select an option</option>
+          {interestOptions.map((o) => (
+            <option key={o} value={o}>
+              {o}
+            </option>
+          ))}
+        </select>
       </div>
 
       <div>
