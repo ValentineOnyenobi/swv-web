@@ -12,6 +12,7 @@ const schema = z.object({
   email: z.string().trim().email().max(200),
   phone: z.string().trim().max(50).optional().default(""),
   message: z.string().trim().max(4000).optional().default(""),
+  interest: z.string().trim().max(100).optional().default(""),
   pageUri: z.string().trim().max(500).optional().default(""),
 });
 
@@ -23,7 +24,10 @@ export const submitContactEnquiry = createServerFn({ method: "POST" })
       { name: "lastname", value: data.lastname },
       { name: "email", value: data.email },
       { name: "phone", value: data.phone },
-      { name: "message", value: data.message },
+      {
+        name: "message",
+        value: data.interest ? `Interested in: ${data.interest}\n\n${data.message}` : data.message,
+      },
     ].filter((f) => f.value !== "");
 
     const res = await fetch(ENDPOINT, {

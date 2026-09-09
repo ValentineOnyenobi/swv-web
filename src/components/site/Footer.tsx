@@ -18,25 +18,19 @@ export function Footer() {
             />
           </span>
           <p className="mt-3 text-sm leading-relaxed text-white/75">
-            Property Care · Guest Experience
+            Property operations, simplified.
             <br />
-            Systems · Operations
+            Automation · Property Care
           </p>
         </div>
 
         <nav aria-label="Footer" className="flex flex-col items-start gap-2">
           <p className="text-[0.625rem] uppercase tracking-[0.2em] text-white/40">Explore</p>
-          {navLinks
-            .filter((link) => link.to !== "/elite-package")
-            .map((link) => (
-              <Link
-                key={link.to}
-                to={link.to}
-                className="text-sm transition-colors hover:text-white"
-              >
-                {link.label}
-              </Link>
-            ))}
+          {navLinks.map((link) => (
+            <Link key={link.to} to={link.to} className="text-sm transition-colors hover:text-white">
+              {link.label}
+            </Link>
+          ))}
         </nav>
 
         <nav aria-label="More" className="flex flex-col items-start gap-2">
@@ -74,7 +68,7 @@ export function Footer() {
 
       <div className="mx-auto mt-7 flex max-w-6xl flex-col gap-2 border-t border-white/10 pt-5 text-xs text-white/40 sm:flex-row sm:items-center sm:justify-between sm:mt-8">
         <span>© {new Date().getFullYear()} StayWithVantage. All rights reserved.</span>
-        <span>Property services · Guest experience</span>
+        <span>Property automation · Property care</span>
       </div>
     </footer>
   );

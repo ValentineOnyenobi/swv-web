@@ -60,15 +60,11 @@ export function HowItWorks() {
       <div className="mx-auto w-full max-w-6xl">
         <p className="eyebrow">How it works</p>
         <h2 className="mt-4 max-w-2xl text-3xl sm:text-4xl">
-          Information moves. Your team stays in control.
+          From request to completion, in four steps.
         </h2>
-        <p className="mt-5 max-w-xl text-muted-foreground">
-          StayWithVantage connects guests, your team and your property. Requests are captured,
-          routed and tracked — so nothing gets missed.
-        </p>
 
         {/* Connected journey */}
-        <ol ref={ref} className="mt-14 grid gap-10 lg:grid-cols-5 lg:gap-5">
+        <ol ref={ref} className="mt-12 grid gap-10 lg:grid-cols-4 lg:gap-6">
           {howItWorks.map((s, i) => (
             <li
               key={s.step}
@@ -117,15 +113,7 @@ export function HowItWorks() {
                   <span className="text-[0.625rem] uppercase tracking-[0.18em] text-muted-foreground lg:hidden">
                     {s.stage}
                   </span>
-                  <h3 className="mt-1 text-lg leading-snug lg:mt-0">
-                    {s.title}
-                    {s.titleLine2 && (
-                      <>
-                        <br />
-                        {s.titleLine2}
-                      </>
-                    )}
-                  </h3>
+                  <h3 className="mt-1 text-lg leading-snug lg:mt-0">{s.title}</h3>
                   <p className="mt-2 text-sm text-muted-foreground">{s.copy}</p>
                 </div>
               </div>
@@ -136,11 +124,11 @@ export function HowItWorks() {
         {/* Information panel */}
         <div className="mt-16 rounded-lg border border-primary/15 bg-background/70 px-6 py-8 sm:px-10 sm:py-10">
           <h3 className="max-w-xl text-xl sm:text-2xl">
-            StayWithVantage coordinates information.
+            Technology coordinates the operation. People deliver the work.
           </h3>
           <p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted-foreground">
-            The work itself is performed either by your own team or by the{" "}
-            <span className="text-foreground">Elite Handlers</span> Property Care team.
+            The work itself is carried out either by your own team or by the{" "}
+            <span className="text-foreground">Elite Handlers</span> property care team.
           </p>
         </div>
       </div>

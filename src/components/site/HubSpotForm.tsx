@@ -1,13 +1,14 @@
 import { useState } from "react";
 import { useServerFn } from "@tanstack/react-start";
 import { submitContactEnquiry } from "@/lib/hubspot.functions";
+import { interestOptions } from "@/content/site";
 
 const fieldClass =
   "mt-1.5 w-full rounded-lg border border-border bg-background px-3.5 py-2.5 text-sm text-foreground outline-none transition-colors placeholder:text-muted-foreground/70 focus:border-primary/60";
 
 const labelClass = "block text-[0.7rem] tracking-[0.14em] uppercase text-muted-foreground";
 
-export function HubSpotForm() {
+export function HubSpotForm({ defaultInterest }: { defaultInterest?: string | undefined }) {
   const submit = useServerFn(submitContactEnquiry);
   const [state, setState] = useState<"idle" | "sending" | "sent">("idle");
   const [error, setError] = useState<string | null>(null);
@@ -26,6 +27,7 @@ export function HubSpotForm() {
           email: String(fd.get("email") ?? ""),
           phone: String(fd.get("phone") ?? ""),
           message: String(fd.get("message") ?? ""),
+          interest: String(fd.get("interest") ?? ""),
           pageUri: typeof window !== "undefined" ? window.location.href : "",
         },
       });
@@ -45,7 +47,7 @@ export function HubSpotForm() {
   if (state === "sent") {
     return (
       <div className="rounded-xl border border-primary/20 bg-secondary/60 p-6">
-        <p className="text-base">Thank you — your enquiry is with us.</p>
+        <p className="text-base">Thank you - your enquiry is with us.</p>
         <p className="mt-2 text-sm text-muted-foreground">
           We'll come back to you shortly, usually the same day.
         </p>
@@ -82,6 +84,25 @@ export function HubSpotForm() {
           Phone number
         </label>
         <input id="phone" name="phone" type="tel" autoComplete="tel" className={fieldClass} />
+      </div>
+
+      <div>
+        <label className={labelClass} htmlFor="interest">
+          Interested in
+        </label>
+        <select
+          id="interest"
+          name="interest"
+          defaultValue={defaultInterest ?? ""}
+          className={fieldClass}
+        >
+          <option value="">Select an option</option>
+          {interestOptions.map((o) => (
+            <option key={o} value={o}>
+              {o}
+            </option>
+          ))}
+        </select>
       </div>
 
       <div>
