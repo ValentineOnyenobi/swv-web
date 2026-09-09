@@ -283,7 +283,6 @@ export const reassurances = [
 export const trustPoints = [
   { title: "Vetted & Trained Staff", copy: "Screened, inducted and supervised." },
   { title: "Consistent Reporting", copy: "The same standard of record, every visit." },
-  { title: "Insurance & Bonding", copy: "Placeholder - cover details to be added." },
 ];
 
 export const testimonials = [
