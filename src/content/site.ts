@@ -171,7 +171,7 @@ export const automationCapabilities = [
   "Digital Forms",
   "Task Creation",
   "Automated Routing",
-  "Property-specific Workflows",
+  "Property-Specific Workflows",
   "Staff & Team Assignment",
   "Status Tracking",
   "Operational Dashboards",
