@@ -1,26 +1,37 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { MessageCircle } from "lucide-react";
-import { contact, whatsappHref } from "@/content/site";
+import { contact, interestOptions, whatsappHref } from "@/content/site";
 import { Eyebrow, Section } from "@/components/site/ui";
 import { HubSpotForm } from "@/components/site/HubSpotForm";
 
 const title = "Contact StayWithVantage - Let's make it easier";
 const description =
-  "Talk to StayWithVantage about property care, guest experience and operational systems. WhatsApp is the fastest route, or send us an enquiry.";
+  "Talk to StayWithVantage about property automation, property care, or both. WhatsApp is the fastest route, or send us an enquiry.";
+
+type ContactSearch = { interest?: string };
 
 export const Route = createFileRoute("/contact")({
+  validateSearch: (search: Record<string, unknown>): ContactSearch => {
+    const raw = typeof search.interest === "string" ? search.interest : undefined;
+    const match = interestOptions.find((o) => o.toLowerCase() === raw?.toLowerCase());
+    return match ? { interest: match } : {};
+  },
   head: () => ({
     meta: [
       { title },
       { name: "description", content: description },
       { property: "og:title", content: title },
       { property: "og:description", content: description },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
   component: ContactPage,
 });
 
 function ContactPage() {
+  const { interest } = Route.useSearch();
+
   return (
     <Section className="bg-secondary/60 pt-32 sm:pt-40">
       <div className="grid gap-14 md:grid-cols-2 md:gap-20">
@@ -28,7 +39,7 @@ function ContactPage() {
           <Eyebrow>Contact</Eyebrow>
           <h1 className="mt-4 text-4xl sm:text-5xl">Let's make it easier.</h1>
           <p className="mt-4 max-w-sm text-muted-foreground">
-            WhatsApp is the fastest route to a real answer — usually the same day.
+            WhatsApp is the fastest route to a real answer - usually the same day.
           </p>
           <a
             href={whatsappHref}
@@ -52,7 +63,7 @@ function ContactPage() {
             Tell us about the property and we'll come back to you.
           </p>
           <div className="mt-6">
-            <HubSpotForm />
+            <HubSpotForm defaultInterest={interest} />
           </div>
         </div>
       </div>

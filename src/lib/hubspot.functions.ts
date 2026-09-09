@@ -12,6 +12,7 @@ const schema = z.object({
   email: z.string().trim().email().max(200),
   phone: z.string().trim().max(50).optional().default(""),
   message: z.string().trim().max(4000).optional().default(""),
+  interest: z.string().trim().max(100).optional().default(""),
   pageUri: z.string().trim().max(500).optional().default(""),
 });
 

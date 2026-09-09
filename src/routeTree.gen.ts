@@ -11,11 +11,13 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as AboutRouteImport } from './routes/about'
+import { Route as AutomationRouteImport } from './routes/automation'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as ElitePackageRouteImport } from './routes/elite-package'
 import { Route as PlatformRouteImport } from './routes/platform'
 import { Route as PricingEstimatesRouteImport } from './routes/pricing-estimates'
 import { Route as PrivacyRouteImport } from './routes/privacy'
+import { Route as PropertyCareRouteImport } from './routes/property-care'
 import { Route as ServicesRouteImport } from './routes/services'
 import { Route as TermsRouteImport } from './routes/terms'
 
@@ -27,6 +29,11 @@ const IndexRoute = IndexRouteImport.update({
 const AboutRoute = AboutRouteImport.update({
   id: '/about',
   path: '/about',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AutomationRoute = AutomationRouteImport.update({
+  id: '/automation',
+  path: '/automation',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ContactRoute = ContactRouteImport.update({
@@ -54,6 +61,11 @@ const PrivacyRoute = PrivacyRouteImport.update({
   path: '/privacy',
   getParentRoute: () => rootRouteImport,
 } as any)
+const PropertyCareRoute = PropertyCareRouteImport.update({
+  id: '/property-care',
+  path: '/property-care',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ServicesRoute = ServicesRouteImport.update({
   id: '/services',
   path: '/services',
@@ -68,22 +80,26 @@ const TermsRoute = TermsRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/automation': typeof AutomationRoute
   '/contact': typeof ContactRoute
   '/elite-package': typeof ElitePackageRoute
   '/platform': typeof PlatformRoute
   '/pricing-estimates': typeof PricingEstimatesRoute
   '/privacy': typeof PrivacyRoute
+  '/property-care': typeof PropertyCareRoute
   '/services': typeof ServicesRoute
   '/terms': typeof TermsRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/automation': typeof AutomationRoute
   '/contact': typeof ContactRoute
   '/elite-package': typeof ElitePackageRoute
   '/platform': typeof PlatformRoute
   '/pricing-estimates': typeof PricingEstimatesRoute
   '/privacy': typeof PrivacyRoute
+  '/property-care': typeof PropertyCareRoute
   '/services': typeof ServicesRoute
   '/terms': typeof TermsRoute
 }
@@ -91,11 +107,13 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/automation': typeof AutomationRoute
   '/contact': typeof ContactRoute
   '/elite-package': typeof ElitePackageRoute
   '/platform': typeof PlatformRoute
   '/pricing-estimates': typeof PricingEstimatesRoute
   '/privacy': typeof PrivacyRoute
+  '/property-care': typeof PropertyCareRoute
   '/services': typeof ServicesRoute
   '/terms': typeof TermsRoute
 }
@@ -104,33 +122,39 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/about'
+    | '/automation'
     | '/contact'
     | '/elite-package'
     | '/platform'
     | '/pricing-estimates'
     | '/privacy'
+    | '/property-care'
     | '/services'
     | '/terms'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
     | '/about'
+    | '/automation'
     | '/contact'
     | '/elite-package'
     | '/platform'
     | '/pricing-estimates'
     | '/privacy'
+    | '/property-care'
     | '/services'
     | '/terms'
   id:
     | '__root__'
     | '/'
     | '/about'
+    | '/automation'
     | '/contact'
     | '/elite-package'
     | '/platform'
     | '/pricing-estimates'
     | '/privacy'
+    | '/property-care'
     | '/services'
     | '/terms'
   fileRoutesById: FileRoutesById
@@ -138,11 +162,13 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
+  AutomationRoute: typeof AutomationRoute
   ContactRoute: typeof ContactRoute
   ElitePackageRoute: typeof ElitePackageRoute
   PlatformRoute: typeof PlatformRoute
   PricingEstimatesRoute: typeof PricingEstimatesRoute
   PrivacyRoute: typeof PrivacyRoute
+  PropertyCareRoute: typeof PropertyCareRoute
   ServicesRoute: typeof ServicesRoute
   TermsRoute: typeof TermsRoute
 }
@@ -161,6 +187,13 @@ declare module '@tanstack/react-router' {
       path: '/about'
       fullPath: '/about'
       preLoaderRoute: typeof AboutRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/automation': {
+      id: '/automation'
+      path: '/automation'
+      fullPath: '/automation'
+      preLoaderRoute: typeof AutomationRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/contact': {
@@ -198,6 +231,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof PrivacyRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/property-care': {
+      id: '/property-care'
+      path: '/property-care'
+      fullPath: '/property-care'
+      preLoaderRoute: typeof PropertyCareRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/services': {
       id: '/services'
       path: '/services'
@@ -218,11 +258,13 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
+  AutomationRoute: AutomationRoute,
   ContactRoute: ContactRoute,
   ElitePackageRoute: ElitePackageRoute,
   PlatformRoute: PlatformRoute,
   PricingEstimatesRoute: PricingEstimatesRoute,
   PrivacyRoute: PrivacyRoute,
+  PropertyCareRoute: PropertyCareRoute,
   ServicesRoute: ServicesRoute,
   TermsRoute: TermsRoute,
 }
