@@ -60,15 +60,11 @@ export function HowItWorks() {
       <div className="mx-auto w-full max-w-6xl">
         <p className="eyebrow">How it works</p>
         <h2 className="mt-4 max-w-2xl text-3xl sm:text-4xl">
-          Information moves. Your team stays in control.
+          From request to completion, in four steps.
         </h2>
-        <p className="mt-5 max-w-xl text-muted-foreground">
-          StayWithVantage connects guests, your team and your property. Requests are captured,
-          routed and tracked — so nothing gets missed.
-        </p>
 
         {/* Connected journey */}
-        <ol ref={ref} className="mt-14 grid gap-10 lg:grid-cols-5 lg:gap-5">
+        <ol ref={ref} className="mt-12 grid gap-10 lg:grid-cols-4 lg:gap-6">
           {howItWorks.map((s, i) => (
             <li
               key={s.step}
