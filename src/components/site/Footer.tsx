@@ -68,7 +68,7 @@ export function Footer() {
 
       <div className="mx-auto mt-7 flex max-w-6xl flex-col gap-2 border-t border-white/10 pt-5 text-xs text-white/40 sm:flex-row sm:items-center sm:justify-between sm:mt-8">
         <span>© {new Date().getFullYear()} StayWithVantage. All rights reserved.</span>
-        <span>Property automation · Property care</span>
+        <span>Property Automation · Guest Services · Property Care</span>
       </div>
     </footer>
   );
