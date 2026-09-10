@@ -58,7 +58,7 @@ function AutomationPage() {
        </section>
 
       {/* Guest services */}
-      <Section>
+      <Section id="guest-services">
         <Eyebrow>Guest Services</Eyebrow>
         <h2 className="mt-4 max-w-2xl text-3xl leading-snug sm:text-4xl">
           {guestServicesHero.heading}
