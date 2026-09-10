@@ -5,6 +5,7 @@ import {
   automationCapabilities,
   automationOutcomes,
   exampleWorkflow,
+  guestServicesHero,
   images,
 } from "@/content/site";
 import pageHero from "@/assets/pf-page-hero.jpg";
@@ -54,7 +55,79 @@ function AutomationPage() {
             />
           </div>
         </div>
-      </section>
+       </section>
+
+      {/* Guest services */}
+      <Section>
+        <Eyebrow>Guest Services</Eyebrow>
+        <h2 className="mt-4 max-w-2xl text-3xl leading-snug sm:text-4xl">
+          {guestServicesHero.heading}
+        </h2>
+        <p className="mt-6 max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg">
+          {guestServicesHero.subheading}
+        </p>
+        <p className="mt-6 max-w-2xl text-sm leading-relaxed text-muted-foreground">
+          {guestServicesHero.framing}
+        </p>
+
+        {/* Two columns: what guests get / what owners get */}
+        <div className="mt-12 grid gap-8 md:grid-cols-2 lg:gap-12">
+          <div>
+            <h3 className="border-t border-primary/20 pt-5 text-lg">What Guests Get</h3>
+            <ul className="mt-5 space-y-3">
+              {guestServicesHero.guestsGet.map((g) => (
+                <li key={g} className="flex gap-3 text-sm">
+                  <span aria-hidden className="text-muted-foreground">—</span>
+                  <span>{g}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <h3 className="border-t border-primary/20 pt-5 text-lg">What Owners Get</h3>
+            <ul className="mt-5 space-y-3">
+              {guestServicesHero.ownersGet.map((o) => (
+                <li key={o} className="flex gap-3 text-sm">
+                  <span aria-hidden className="text-muted-foreground">—</span>
+                  <span>{o}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+
+        {/* Monetisable services cards */}
+        <div className="mt-14 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          {guestServicesHero.services.map((s) => (
+            <div
+              key={s}
+              className="rounded-lg border border-primary/15 bg-card px-5 py-4 text-sm"
+            >
+              {s}
+            </div>
+          ))}
+        </div>
+        <p className="mt-5 text-sm text-muted-foreground">{guestServicesHero.servicesNote}</p>
+
+        {/* How it works short flow */}
+        <div className="mt-14 rounded-xl border border-primary/20 bg-card px-6 py-7 sm:px-9 sm:py-8">
+          <p className="text-xs uppercase tracking-[0.18em] text-muted-foreground">How It Works</p>
+          <p className="mt-4 max-w-3xl text-base leading-relaxed">
+            {guestServicesHero.flow}
+          </p>
+        </div>
+
+        {/* CTA */}
+        <div className="mt-10">
+          <Link
+            to="/contact"
+            search={{ interest: "Automation" }}
+            className="inline-flex items-center justify-center rounded-full bg-primary px-6 py-3 text-sm tracking-wide text-primary-foreground transition-colors hover:bg-ink"
+          >
+            {guestServicesHero.ctaLabel}
+          </Link>
+        </div>
+      </Section>
 
       {/* Capabilities */}
       <Section>
