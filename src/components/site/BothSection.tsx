@@ -4,11 +4,11 @@ import { LinkButton, Section, Eyebrow } from "./ui";
 export function BothSection() {
   return (
     <Section className="bg-ink text-white">
-      <Eyebrow>Integrated</Eyebrow>
-      <h2 className="mt-4 max-w-xl text-3xl text-white sm:text-4xl">Prefer both together?</h2>
+      <Eyebrow>Complete Package</Eyebrow>
+      <h2 className="mt-4 max-w-xl text-3xl text-white sm:text-4xl">The Complete Elite Package.</h2>
       <p className="mt-5 max-w-xl text-white/70">
-        Combine StayWithVantage automation with Elite Handlers property care for one coordinated
-        operating flow.
+        Combine automation, guest services, and Elite Handlers property care, and every visit works
+        harder - fewer missed requests, a better-kept property, and more revenue from every stay.
       </p>
 
       <ol className="mt-12 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
@@ -24,7 +24,7 @@ export function BothSection() {
       </ol>
 
       <p className="mt-12 max-w-xl font-[family-name:var(--font-display)] text-xl text-white sm:text-2xl">
-        One coordinated flow from request to completion.
+        One coordinated flow. Every part of it working toward more revenue, not just less friction.
       </p>
 
       <div className="mt-8">
