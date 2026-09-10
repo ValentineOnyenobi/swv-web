@@ -154,6 +154,10 @@ function AutomationPage() {
           Operators who already have their own teams but want better systems, coordination and
           visibility.
         </h2>
+        <p className="mt-6 max-w-2xl text-muted-foreground">
+          Automation doesn&apos;t just reduce friction - paired with guest services, it turns every
+          request into a chance to earn more per stay.
+        </p>
         <div className="mt-9">
           <Link
             to="/contact"

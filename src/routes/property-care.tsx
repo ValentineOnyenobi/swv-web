@@ -54,6 +54,11 @@ function PropertyCarePage() {
       <Section>
         <Eyebrow>Services</Eyebrow>
         <h2 className="mt-4 max-w-xl text-3xl sm:text-4xl">People on the ground.</h2>
+        <p className="mt-5 max-w-2xl text-muted-foreground">
+          A well-kept property earns better reviews, more repeat bookings, and a higher rate per
+          stay - the physical work behind guest experience that owners rarely see, but always feel
+          in the results.
+        </p>
         <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3 lg:gap-6">
           {handlerServices.map((s) => (
             <article key={s.title}>
