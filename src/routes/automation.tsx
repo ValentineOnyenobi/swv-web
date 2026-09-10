@@ -77,7 +77,7 @@ function AutomationPage() {
             <ul className="mt-5 space-y-3">
               {guestServicesHero.guestsGet.map((g) => (
                 <li key={g} className="flex gap-3 text-sm">
-                  <span aria-hidden className="text-muted-foreground">—</span>
+                  <span aria-hidden className="text-muted-foreground">-</span>
                   <span>{g}</span>
                 </li>
               ))}
@@ -88,7 +88,7 @@ function AutomationPage() {
             <ul className="mt-5 space-y-3">
               {guestServicesHero.ownersGet.map((o) => (
                 <li key={o} className="flex gap-3 text-sm">
-                  <span aria-hidden className="text-muted-foreground">—</span>
+                  <span aria-hidden className="text-muted-foreground">-</span>
                   <span>{o}</span>
                 </li>
               ))}
