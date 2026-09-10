@@ -38,7 +38,7 @@ function AboutPage() {
         <div className="relative mx-auto w-full max-w-6xl px-5 pb-16 pt-32 sm:px-8 sm:pb-20">
           <p className="text-[0.6875rem] uppercase tracking-[0.22em] text-white/80">About</p>
           <h1 className="mt-5 max-w-3xl text-3xl leading-[1.06] text-white sm:text-5xl">
-            Property operations, simplified.
+            Property Operations, simplified.
           </h1>
           <p className="mt-6 max-w-lg text-sm leading-relaxed text-white/85 sm:text-base">
             {modelStatement}
@@ -97,7 +97,7 @@ function AboutPage() {
         <div className="mt-12 flex flex-col gap-3 sm:flex-row">
           <LinkButton to="/contact">Get Started</LinkButton>
           <LinkButton to="/property-care" variant="outline">
-            Explore property care
+            Explore Property Care
           </LinkButton>
         </div>
       </Section>
