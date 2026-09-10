@@ -1,11 +1,10 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { Eyebrow, Section } from "@/components/site/ui";
+import { Eyebrow, ExploreLink, Section } from "@/components/site/ui";
 import { BothSection } from "@/components/site/BothSection";
 import {
   automationCapabilities,
   automationOutcomes,
   exampleWorkflow,
-  guestServicesHero,
   images,
 } from "@/content/site";
 import pageHero from "@/assets/pf-page-hero.jpg";
