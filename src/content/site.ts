@@ -64,7 +64,7 @@ export const servicePaths = [
   {
     id: "automation",
     title: "Automate My Property",
-    copy: "Digital operations, guest requests, task routing & reporting.",
+    copy: "Digital operations, guest requests, task routing, reporting — and guest services that earn you more.",
     cta: "Explore Automation",
     to: "/automation",
     image: platformQr,
