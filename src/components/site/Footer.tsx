@@ -20,7 +20,7 @@ export function Footer() {
           <p className="mt-3 text-sm leading-relaxed text-white/75">
             Property operations, simplified.
             <br />
-            Automation · Property Care
+            Automation · Guest Services · Property Care
           </p>
         </div>
 
