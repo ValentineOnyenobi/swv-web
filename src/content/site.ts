@@ -224,6 +224,36 @@ export const bothFlow = [
   "Manager Visibility & Reporting",
 ];
 
+/* --------------------------- Guest Services ------------------------------ */
+export const guestServicesHero = {
+  heading: "Make your property feel like a hotel.",
+  subheading:
+    "StayWithVantage automates guest services and upsells so small hotels and short-lets operate like a boutique chain — without the overhead of one.",
+  framing:
+    "Small properties can't match big hotels on staff, systems, or guest services. The same QR code your guests already scan to make a request can also offer them a menu of hotel-style services — automated, tracked, and delivered by your own team or Elite Handlers.",
+  guestsGet: [
+    "A clear menu of services, on demand",
+    "Fast, tracked requests — nothing lost between shifts",
+    "The experience of a full-service hotel, in a small property",
+  ],
+  ownersGet: [
+    "More revenue per stay, from services you didn't have to build or staff",
+    "Better reviews from guests who feel taken care of",
+    "A brand that feels like a boutique chain, even if it's one building",
+  ],
+  services: [
+    "Private Chef",
+    "Concierge",
+    "Airport Pickup",
+    "Dry Cleaning",
+    "Welcome Baskets",
+    "Late Checkout",
+  ],
+  servicesNote: "...and many more.",
+  flow: "Guest scans QR → selects a service → pays (where applicable) → request logged and routed → your team or Elite Handlers delivers → you see it all in one place.",
+  ctaLabel: "See how much more you could earn per stay",
+};
+
 /* ---------------------------------- About -------------------------------- */
 export const whoWeServe = [
   {
@@ -270,6 +300,10 @@ export const whyPoints = [
   {
     title: "Flexible Execution",
     copy: "Use your own team, Elite Handlers, or a combination of both.",
+  },
+  {
+    title: "New Revenue, Not Just Less Friction",
+    copy: "Every request captured is also a chance to offer guests something they'll pay for.",
   },
 ];
 
