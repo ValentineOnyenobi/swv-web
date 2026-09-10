@@ -253,7 +253,7 @@ export const guestServicesHero = {
     { label: "Concierge", image: svcOther, alt: "Concierge assisting a guest" },
     { label: "Airport Pickup", image: svcTransfer, alt: "Private car transfer waiting for a guest" },
     { label: "Dry Cleaning", image: svcLaundry, alt: "Freshly pressed laundry being handled" },
-    { label: "Welcome Baskets", image: svcGrocery, alt: "Fresh grocery and welcome basket items" },
+    { label: "Welcome Baskets", image: svcWelcomeBasket, alt: "Premium hamper basket filled with gourmet welcome treats" },
     { label: "Late Checkout", image: svcRoom, alt: "Calm guest room prepared for a relaxed late checkout" },
   ],
   servicesNote: "...and many more.",
