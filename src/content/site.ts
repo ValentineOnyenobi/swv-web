@@ -27,6 +27,7 @@ import svcTransfer from "@/assets/svc-transfer.jpg";
 import svcLaundry from "@/assets/svc-laundry.jpg";
 import svcRoom from "@/assets/svc-room.jpg";
 import svcGrocery from "@/assets/svc-grocery.jpg";
+import svcWelcomeBasket from "@/assets/svc-welcome-basket.jpg";
 import svcOther from "@/assets/svc-other.jpg";
 
 export const images = {
