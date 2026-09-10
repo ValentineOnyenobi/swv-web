@@ -37,7 +37,7 @@ function ContactPage() {
       <div className="grid gap-14 md:grid-cols-2 md:gap-20">
         <div>
           <Eyebrow>Contact</Eyebrow>
-          <h1 className="mt-4 text-4xl sm:text-5xl">Let's make it easier.</h1>
+          <h1 className="mt-4 text-4xl sm:text-5xl">Let's make it easier - and help you earn more.</h1>
           <p className="mt-4 max-w-sm text-muted-foreground">
             WhatsApp is the fastest route to a real answer - usually the same day.
           </p>

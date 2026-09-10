@@ -13,6 +13,7 @@ import { Route as IndexRouteImport } from './routes/index'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as AutomationRouteImport } from './routes/automation'
 import { Route as ContactRouteImport } from './routes/contact'
+import { Route as GuestServicesRouteImport } from './routes/guest-services'
 import { Route as PrivacyRouteImport } from './routes/privacy'
 import { Route as PropertyCareRouteImport } from './routes/property-care'
 import { Route as TermsRouteImport } from './routes/terms'
@@ -37,6 +38,11 @@ const ContactRoute = ContactRouteImport.update({
   path: '/contact',
   getParentRoute: () => rootRouteImport,
 } as any)
+const GuestServicesRoute = GuestServicesRouteImport.update({
+  id: '/guest-services',
+  path: '/guest-services',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const PrivacyRoute = PrivacyRouteImport.update({
   id: '/privacy',
   path: '/privacy',
@@ -58,6 +64,7 @@ export interface FileRoutesByFullPath {
   '/about': typeof AboutRoute
   '/automation': typeof AutomationRoute
   '/contact': typeof ContactRoute
+  '/guest-services': typeof GuestServicesRoute
   '/privacy': typeof PrivacyRoute
   '/property-care': typeof PropertyCareRoute
   '/terms': typeof TermsRoute
@@ -67,6 +74,7 @@ export interface FileRoutesByTo {
   '/about': typeof AboutRoute
   '/automation': typeof AutomationRoute
   '/contact': typeof ContactRoute
+  '/guest-services': typeof GuestServicesRoute
   '/privacy': typeof PrivacyRoute
   '/property-care': typeof PropertyCareRoute
   '/terms': typeof TermsRoute
@@ -77,6 +85,7 @@ export interface FileRoutesById {
   '/about': typeof AboutRoute
   '/automation': typeof AutomationRoute
   '/contact': typeof ContactRoute
+  '/guest-services': typeof GuestServicesRoute
   '/privacy': typeof PrivacyRoute
   '/property-care': typeof PropertyCareRoute
   '/terms': typeof TermsRoute
@@ -88,6 +97,7 @@ export interface FileRouteTypes {
     | '/about'
     | '/automation'
     | '/contact'
+    | '/guest-services'
     | '/privacy'
     | '/property-care'
     | '/terms'
@@ -97,6 +107,7 @@ export interface FileRouteTypes {
     | '/about'
     | '/automation'
     | '/contact'
+    | '/guest-services'
     | '/privacy'
     | '/property-care'
     | '/terms'
@@ -106,6 +117,7 @@ export interface FileRouteTypes {
     | '/about'
     | '/automation'
     | '/contact'
+    | '/guest-services'
     | '/privacy'
     | '/property-care'
     | '/terms'
@@ -116,6 +128,7 @@ export interface RootRouteChildren {
   AboutRoute: typeof AboutRoute
   AutomationRoute: typeof AutomationRoute
   ContactRoute: typeof ContactRoute
+  GuestServicesRoute: typeof GuestServicesRoute
   PrivacyRoute: typeof PrivacyRoute
   PropertyCareRoute: typeof PropertyCareRoute
   TermsRoute: typeof TermsRoute
@@ -151,6 +164,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ContactRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/guest-services': {
+      id: '/guest-services'
+      path: '/guest-services'
+      fullPath: '/guest-services'
+      preLoaderRoute: typeof GuestServicesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/privacy': {
       id: '/privacy'
       path: '/privacy'
@@ -180,6 +200,7 @@ const rootRouteChildren: RootRouteChildren = {
   AboutRoute: AboutRoute,
   AutomationRoute: AutomationRoute,
   ContactRoute: ContactRoute,
+  GuestServicesRoute: GuestServicesRoute,
   PrivacyRoute: PrivacyRoute,
   PropertyCareRoute: PropertyCareRoute,
   TermsRoute: TermsRoute,
