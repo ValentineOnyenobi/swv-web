@@ -51,7 +51,7 @@ export function Hero() {
           <ScrollButton to="what-do-you-need" variant="light">
             What do you need?
           </ScrollButton>
-          <LinkButton to="/automation" hash="guest-services" variant="light">
+          <LinkButton to="/guest-services" variant="light">
             See how you could earn more
           </LinkButton>
         </div>
@@ -223,7 +223,7 @@ export function Audiences() {
 const ctaChoices = [
   { label: "Automate my property", interest: "Automation" },
   { label: "Take care of my property", interest: "Property Care" },
-  { label: "Both", interest: "Both" },
+  { label: "The Complete Elite Package", interest: "The Complete Elite Package" },
 ];
 
 export function FinalCTA() {
