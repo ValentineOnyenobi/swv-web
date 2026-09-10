@@ -5,6 +5,7 @@ import {
   automationCapabilities,
   automationOutcomes,
   exampleWorkflow,
+  guestServicesHero,
   images,
 } from "@/content/site";
 import pageHero from "@/assets/pf-page-hero.jpg";
