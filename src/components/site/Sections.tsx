@@ -35,21 +35,25 @@ export function Hero() {
         </h1>
 
         <p className="mt-6 max-w-xl text-sm leading-relaxed text-white/85 sm:text-base">
-          We help hotels, short-lets and serviced apartment operators run better through a
-          combination of property automation and professional property care.
+          We help hotels, short-lets and serviced apartment operators run better - and earn more
+          from every guest - through property automation, guest services, and professional property
+          care.
         </p>
 
         <p className="mt-6 inline-block border-l-2 border-white/60 bg-black/30 py-2 pl-4 pr-5 font-[family-name:var(--font-display)] text-base leading-snug text-white sm:text-xl">
           {modelStatement}
         </p>
 
-        <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+        <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
           <LinkButton to="/contact" className="bg-white text-primary hover:bg-white/90">
             Get Started
           </LinkButton>
           <ScrollButton to="what-do-you-need" variant="light">
             What do you need?
           </ScrollButton>
+          <LinkButton to="/automation" hash="guest-services" variant="light">
+            See how you could earn more
+          </LinkButton>
         </div>
       </div>
     </section>
