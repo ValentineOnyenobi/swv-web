@@ -27,7 +27,7 @@ export function Hero() {
       <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/35 to-black/40" />
       <div className="relative mx-auto w-full max-w-6xl px-5 pb-16 pt-28 sm:px-8 sm:pb-20">
         <p className="text-[0.6875rem] uppercase tracking-[0.22em] text-white/80">
-          StayWithVantage - Property operations, simplified
+          STAYWITHVANTAGE - PROPERTY OPERATIONS, SIMPLIFIED.
         </p>
 
         <h1 className="mt-5 max-w-3xl text-4xl leading-[1.05] text-white sm:text-6xl md:text-7xl">
