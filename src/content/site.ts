@@ -22,6 +22,12 @@ import flowCapture from "@/assets/flow-02-capture.jpg";
 import flowRoute from "@/assets/flow-03-route.jpg";
 import flowTrack from "@/assets/flow-04-track.jpg";
 import flowVisibility from "@/assets/flow-05-visibility.jpg";
+import svcChef from "@/assets/svc-chef.jpg";
+import svcTransfer from "@/assets/svc-transfer.jpg";
+import svcLaundry from "@/assets/svc-laundry.jpg";
+import svcRoom from "@/assets/svc-room.jpg";
+import svcGrocery from "@/assets/svc-grocery.jpg";
+import svcOther from "@/assets/svc-other.jpg";
 
 export const images = {
   hero: heroSuite,
@@ -49,6 +55,7 @@ export const modelStatement = "Technology coordinates the operation. People deli
 export const navLinks = [
   { label: "Home", to: "/" },
   { label: "Automation", to: "/automation" },
+  { label: "Guest Services", to: "/guest-services" },
   { label: "Property Care", to: "/property-care" },
   { label: "About", to: "/about" },
   { label: "Contact", to: "/contact" },
@@ -81,8 +88,8 @@ export const servicePaths = [
   },
   {
     id: "both",
-    title: "Both",
-    copy: "Technology + operational team working together.",
+    title: "The Complete Elite Package",
+    copy: "Automation, guest services, and property care, together.",
     cta: "See How It Works",
     to: "#how-it-works",
     image: statement,
@@ -230,7 +237,7 @@ export const guestServicesHero = {
   subheading:
     "StayWithVantage automates guest services and upsells so small hotels and short-lets operate like a boutique chain - without the overhead of one.",
   framing:
-    "Small properties can't match big hotels on staff, systems, or guest services. The same QR code your guests already scan to make a request can also offer them a menu of hotel-style services - automated, tracked, and delivered by your own team or Elite Handlers.",
+    "Small properties can't match big hotels on staff, systems, or guest services. The same QR code your guests already scan to make a request can also offer them a menu of hotel-style services - automated, tracked, and coordinated so fulfilment stays with the property, its team, or the relevant service provider.",
   guestsGet: [
     "A clear menu of services, on demand",
     "Fast, tracked requests - nothing lost between shifts",
@@ -242,12 +249,12 @@ export const guestServicesHero = {
     "A brand that feels like a boutique chain, even if it's one building",
   ],
   services: [
-    "Private Chef",
-    "Concierge",
-    "Airport Pickup",
-    "Dry Cleaning",
-    "Welcome Baskets",
-    "Late Checkout",
+    { label: "Private Chef", image: svcChef, alt: "Private chef plating a meal in a serviced apartment kitchen" },
+    { label: "Concierge", image: svcOther, alt: "Concierge assisting a guest" },
+    { label: "Airport Pickup", image: svcTransfer, alt: "Private car transfer waiting for a guest" },
+    { label: "Dry Cleaning", image: svcLaundry, alt: "Freshly pressed laundry being handled" },
+    { label: "Welcome Baskets", image: svcGrocery, alt: "Fresh grocery and welcome basket items" },
+    { label: "Late Checkout", image: svcRoom, alt: "Calm guest room prepared for a relaxed late checkout" },
   ],
   servicesNote: "...and many more.",
   flow: "Guest scans QR → selects a service → pays (where applicable) → request logged and routed → your team or Elite Handlers delivers → you see it all in one place.",
@@ -347,4 +354,9 @@ export const audiences = [
   { label: "Industrial", image: audIndustrial, alt: "Industrial facility cleaning in progress" },
 ];
 
-export const interestOptions = ["Automation", "Property Care", "Both"] as const;
+export const interestOptions = [
+  "Automation",
+  "Guest Services",
+  "Property Care",
+  "The Complete Elite Package",
+] as const;
