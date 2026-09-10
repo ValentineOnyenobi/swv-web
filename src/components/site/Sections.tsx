@@ -220,8 +220,8 @@ export function Audiences() {
 
 /* ---------------------------- Final CTA --------------------------------- */
 const ctaChoices = [
-  { label: "Automate my property", interest: "Automation" },
-  { label: "Take care of my property", interest: "Property Care" },
+  { label: "Automate My Property", interest: "Automation" },
+  { label: "Take Care Of My Property", interest: "Property Care" },
   { label: "The Complete Elite Package", interest: "The Complete Elite Package" },
 ];
 
