@@ -64,7 +64,7 @@ export const servicePaths = [
   {
     id: "automation",
     title: "Automate My Property",
-    copy: "Digital operations, guest requests, task routing, reporting — and guest services that earn you more.",
+    copy: "Digital operations, guest requests, task routing, reporting - and guest services that earn you more.",
     cta: "Explore Automation",
     to: "/automation",
     image: platformQr,
@@ -228,12 +228,12 @@ export const bothFlow = [
 export const guestServicesHero = {
   heading: "Make your property feel like a hotel.",
   subheading:
-    "StayWithVantage automates guest services and upsells so small hotels and short-lets operate like a boutique chain — without the overhead of one.",
+    "StayWithVantage automates guest services and upsells so small hotels and short-lets operate like a boutique chain - without the overhead of one.",
   framing:
-    "Small properties can't match big hotels on staff, systems, or guest services. The same QR code your guests already scan to make a request can also offer them a menu of hotel-style services — automated, tracked, and delivered by your own team or Elite Handlers.",
+    "Small properties can't match big hotels on staff, systems, or guest services. The same QR code your guests already scan to make a request can also offer them a menu of hotel-style services - automated, tracked, and delivered by your own team or Elite Handlers.",
   guestsGet: [
     "A clear menu of services, on demand",
-    "Fast, tracked requests — nothing lost between shifts",
+    "Fast, tracked requests - nothing lost between shifts",
     "The experience of a full-service hotel, in a small property",
   ],
   ownersGet: [
