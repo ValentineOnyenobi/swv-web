@@ -48,10 +48,10 @@ export function Hero() {
             Get Started
           </LinkButton>
           <ScrollButton to="what-do-you-need" variant="light">
-            What do you need?
+            What Do You Need?
           </ScrollButton>
           <LinkButton to="/guest-services" variant="light">
-            See how you could earn more
+            See How You Could Earn More
           </LinkButton>
         </div>
       </div>

@@ -257,7 +257,7 @@ export const guestServicesHero = {
     { label: "Welcome Baskets", image: svcWelcomeBasket, alt: "Premium hamper basket filled with gourmet welcome treats" },
     { label: "Late Checkout", image: svcRoom, alt: "Calm guest room prepared for a relaxed late checkout" },
   ],
-  servicesNote: "...and many more.",
+  servicesNote: "...and Many More.",
   flow: "Guest scans QR → selects a service → pays (where applicable) → request logged and routed → your team or Elite Handlers delivers → you see it all in one place.",
   ctaLabel: "See how much more you could earn per stay",
 };
