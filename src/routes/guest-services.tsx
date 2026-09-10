@@ -126,25 +126,21 @@ function GuestServicesPage() {
           Guest services run on the same automation system that handles maintenance and housekeeping
           requests - one dashboard, no separate tool to learn.
         </p>
-        <div className="mt-8">
+        <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
           <Link
             to="/automation"
             className="inline-flex items-center justify-center rounded-full border border-white/50 px-6 py-3 text-sm tracking-wide text-white transition-colors hover:bg-white hover:text-primary"
           >
             See the automation platform
           </Link>
+          <Link
+            to="/contact"
+            search={{ interest: "Guest Services" }}
+            className="inline-flex items-center justify-center rounded-full bg-primary px-6 py-3 text-sm tracking-wide text-primary-foreground transition-colors hover:bg-primary/90"
+          >
+            {guestServicesHero.ctaLabel}
+          </Link>
         </div>
-      </Section>
-
-      {/* CTA */}
-      <Section className="py-16 md:py-20">
-        <Link
-          to="/contact"
-          search={{ interest: "Guest Services" }}
-          className="inline-flex items-center justify-center rounded-full bg-primary px-6 py-3 text-sm tracking-wide text-primary-foreground transition-colors hover:bg-ink"
-        >
-          {guestServicesHero.ctaLabel}
-        </Link>
       </Section>
     </>
   );
