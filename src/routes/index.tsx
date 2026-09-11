@@ -2,9 +2,10 @@ import { createFileRoute } from "@tanstack/react-router";
 import { FinalCTA, Hero, WhatDoYouNeed } from "@/components/site/Sections";
 import { HowItWorks } from "@/components/site/HowItWorksFlow";
 
-const title = "StayWithVantage - Property operations, simplified.";
+const title =
+  "StayWithVantage | Property Automation, Guest Services & Property Care";
 const description =
-  "StayWithVantage helps hotels, short-lets and serviced apartments run better through property automation and professional property care. Technology coordinates the operation. People deliver the work.";
+  "Make your property easier to run. Run better. Earn more from every guest with property automation, guest services and professional property care.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
